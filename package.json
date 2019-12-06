@@ -1,7 +1,7 @@
 {
-  "name": "testmodules",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "using classes with node and express",
+  "description": "2019 portfolio site working ",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app"
@@ -15,14 +15,16 @@
     "node",
     "javascript"
   ],
-  "author": "TVR",
+  "author": "RS",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "hbs": "^4.0.6",
     "mysql": "^2.17.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "nodemon": "^1.19.4"
   }
 }

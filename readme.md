@@ -1,2 +1,2 @@
-This is an interactive poster about Western University's admission requirements and graduation rates
+This is Ryan Sun's portfolio site
 
