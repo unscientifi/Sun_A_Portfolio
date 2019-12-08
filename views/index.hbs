@@ -1,0 +1,116 @@
+
+<section id="section1" class="panel1">
+        <div class="containter">
+            <div class="row no-padding">
+                <div class="col-6" id="mainSlogan">
+                <h1>Dedicate to Beautiful Artwork</h1>
+                <p>Interactive Media Designer <br> &amp; Video Producer</p>
+                <a id="mainBth" class="btn" href="/portfolio" role="button">Explore More</a>
+                </div>
+
+            <div class="col-6 align-self-center no-padding">
+                <object data="images/square.svg" type="image/svg+xml" class="svg-graphic" id="square">
+                </object>
+            </div>    
+            </div>
+        </div>
+    </section>
+
+<section id="section2" class="panel2">
+    <div class="container">
+    <div class="row">
+        <div class="col align-self-end no-padding">
+              <object data="images/orange2.svg" type="image/svg+xml" class="svg-graphic" id="orange1">
+                </object>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col  align-self-center no-padding">
+           
+              <img src="images/icon.png" alt="myIcon" id="mainShape">
+        </div>
+    </div> 
+    <div class="row">   
+        <div class="col-1"></div>
+        <div class="col-10 align-center no-padding" id="mainInfo">
+            <h2>Adventures in creativity</h2>
+            <h3>Ryan Sun is a multimedia designer, specializing in graphic design and VFX. He thrives in fast paced work environments, where he is able to push his skills and abilities to new levels under pressure. </h3>
+            <a id="aboutBth" class="btn" href="/about" role="button">ABOUT</a>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="section3" class="panel3">
+    <div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 align-self-center no-padding" id="workTitle">
+              {{!-- <h2>FEATURED WORK</h2> --}}
+        </div>
+    </div>
+    
+       <div class="work">
+    <div class="things-panel">
+        <div class="row">
+        {{#each thing}}
+        <div class="user-panel col-6 no-padding">
+            <a class="u-link" href="{{ ID }}">
+               <img class="u-avatar" src="images/{{ Image }}.jpg" alt="avatar">
+            </a>
+             <span class="workText">
+                <h2>{{ Name }}</h2>
+                <h4>{{ Category }}</h4>
+             </span>
+            <p>{{ Description }}</p>
+        </div>
+        {{/each}}
+
+    </div>
+    </div>
+ <a id="viewBth" class="btn" href="/portfolio" role="button">VIEW MY WORK</a>
+    </div>
+    </div>
+</section>
+
+
+<section id="section4" class="panel4">
+ <div class="container">
+    <div class="row">
+        <div class="col align-self-start no-padding">
+              <a href="/contact">
+              <object data="images/button1.svg" type="image/svg+xml" class="svg-graphic" id="buttonSvg">
+                </object>
+            </a>    
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 align-center no-padding">
+        <h2 id="contactText"><a id="contactLink" href="/contact">LET’S GET IN TOUCH!</a></h2>
+        <br>
+        {{!-- <h3 id="indexContact">Have any new projects or ideas?</h3> --}}
+    </div>
+
+</section>
+
+<section class="lightbox">
+        <i id="closeIcon" class="fa fa-close close"></i>
+        {{!-- <span class="close"></span> --}}
+        <div class="sidebar">
+            <img src="" alt="index image">
+        </div>
+
+        <div class="lb-content">
+            
+        </div>
+
+        <div class="vid">
+
+        </div>
+    </section>
+
+   
+
+    
+

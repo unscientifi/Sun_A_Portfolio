@@ -1,8 +1,3 @@
-footer { 
-    color: $footer-text-color;
-    background-color: orange;
- }
-
 ul {
     margin: 0;
     padding: 0;
@@ -16,9 +11,23 @@ ul {
 }
 
 footer {
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     text-align: center;
-    padding-top: 5%;
+    background-color: #F98410;
+    color: $footer-text-color;
 }
 
+#footerIcon img{
+    max-width: 4%;
+    margin: 5% 1% 0 1%;
+    filter: grayscale(0);
+}
 
+#footerIcon img:hover {
+    
+    filter: grayscale(50);
+}
+
+#footer p {
+    margin-top: 3%;
+}

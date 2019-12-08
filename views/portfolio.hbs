@@ -1,0 +1,51 @@
+
+{{!-- <section id="sectionAbout" class="panel1">
+        <div class="containter">
+            <div class="row no-padding">
+            </div>
+        </div>
+    </section> --}}
+
+
+<section id="section3" class="panel">
+    <div class="container">
+    
+       <div class="work">
+    <div class="things-panel">
+        
+        <div class="row">
+        
+        {{#each thing}}
+        <div class="user-panel col-lg-4 col-sm-6 align-center no-padding">
+            <a class="u-link" href="{{ ID }}">
+               <img class="u-avatar" src="images/{{ Image }}.jpg" alt="avatar">
+            </a>   
+             <div class="workText1">
+                <h2>{{ Name }}</h2>
+                <h4>{{ Category }}</h4>
+                
+             </div>
+        </div>
+        {{/each}}
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+</section>
+<section class="lightbox">
+        <i id="closeIcon" class="fa fa-close close"></i>
+        {{!-- <span class="close"></span> --}}
+        <div class="sidebar">
+            <img src="" alt="portfolio image">
+        </div>
+
+        <div class="lb-content">
+            
+        </div>
+    </section>
+
+
+    
+

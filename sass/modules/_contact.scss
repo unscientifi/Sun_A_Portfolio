@@ -1,0 +1,111 @@
+#contactText {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#contactP {
+    text-align: center;
+    font-family: 'gotham light';
+    color: #6d6d6d;
+}
+
+#mailing {
+    text-decoration: none;
+    
+}
+
+#contactForm {
+    margin: 5% 0 0 30%;
+}
+
+
+label {
+    margin-top: 2%;
+    font-family: 'gotham medium';
+}
+
+
+input {
+    max-width: 100%;
+    padding: 0.5% 40% 0.5% 2%;
+    border: 1px solid #dfdfdf;
+    display: block;
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+
+textarea {
+    max-width: 100%;
+    padding: 0.5% 40% 10% 2%;
+    border: 1px solid #dfdfdf;
+    display: block;
+    border-radius: 5px;
+}
+
+#subject-field {
+    margin-bottom: 3%;
+}
+
+#contactBth {
+    margin-top: 5%;
+    padding: 1% 29% 1% 29%;
+    background-color: #4d4d4d;
+    color: white;
+    border: 1px solid #4d4d4d;
+    border-radius: 5px ;
+    margin-bottom: 10%;
+}
+
+#contactBth:hover {
+    background-color: #2d2d2d;
+}
+
+
+@media screen and (min-width: 20em) {
+  
+    #contactText {
+        margin-top: 15%;
+        margin-bottom: 8%;
+    }
+
+    #contactForm {
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    #contactBth {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 30em) {
+  
+    #contactText {
+        margin-top: 12%;
+        margin-bottom: 10%;
+    }
+
+    #contactForm {
+        margin-left: 15%;
+    }
+
+    #contactBth {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (min-width: 40em) {
+  
+    #contactText {
+        text-align: center;
+        margin-top: 10%
+    }
+
+    #contactForm {
+        margin-left: 25%;
+    }
+
+
+    
+}

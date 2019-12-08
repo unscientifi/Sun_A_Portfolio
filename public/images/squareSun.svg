@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1034.4 1034.4" style="enable-background:new 0 0 1034.4 1034.4;" xml:space="preserve">
+
+
+<style type="text/css">
+	.st0{fill:#F24405; filter: url(#shadow-filter1);}
+	.st1{fill:#E2E2E2; filter: url(#shadow-filter1);}
+	.st2{fill:#D1D1D1;}
+
+	svg:hover #shadow { 
+  filter: url(#shadow-filter1);
+}
+
+
+</style>
+
+
+
+
+
+<filter id="shadow-filter1" x="-100%" y="-100%" width="500%" height="500%">
+         <feOffset dx="-3" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+
+
+<path class="st0" d="M861.5,0C861.5,0,861.5,0,861.5,0L499.7,0c-0.8,0.8-1.6,1.6-2.4,2.4c-46.9,46.9-75.9,111.7-75.9,183.3
+	c0,143.2,116.1,259.2,259.2,259.2s259.2-116.1,259.2-259.2C939.9,112.9,909.9,47.1,861.5,0z"/>
+<path id="square1" class="st1" d="M157.8,352.4l427-288c52.7-35.5,124.1-21.6,159.6,31l288,427c-9.2,59.2-0.1,106.2-31,159.6
+	l-427,288c-52.7,35.5-124.1,21.6-159.6-31l-288-427C91.3,459.3,105.2,387.9,157.8,352.4z"/>
+
+<a  id="svgLink" xlink:href="/#section2" target="_top">
+<path id="shadow" class="st2" d="M1035,221.4l-65.4-97C923.3,55.7,830,37.6,761.4,83.9l-369,248.9c-68.7,46.3-86.8,139.6-40.5,208.2
+	l248.9,369c46.3,68.7,139.6,86.8,208.2,40.5l226-152.4V221.4z"/>
+</a>
+
+
+
+</svg>

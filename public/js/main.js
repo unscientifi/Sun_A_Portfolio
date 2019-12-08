@@ -1,46 +1,54 @@
-(() => {
-    // try to get the object and do stuff with it
-    const seeMoreButtons = document.querySelectorAll('.see-more'),
-        popOver = document.querySelector('.popover');
-     
 
-    function buildPopover(numdata, el) {
-        popOver.querySelector(".programs").textContent = `${numdata.Program}`;
-        popOver.querySelector(".requirement").textContent = `Admission Requirement: ${numdata.Requirements}`;
-        popOver.querySelector(".grads").textContent = `Graduation Rates: ${numdata.GraduationRates}`;
-        popOver.querySelector(".employ").textContent =`Employment Rates: ${numdata.EmploymentRates}`;
+const myVM = (() => {
+    let userButtons = document.querySelectorAll('.u-link'),
+        lightbox = document.querySelector('.lightbox');
 
-        //show the popover
-        popOver.classList.add('show-popover');
-        el.appendChild(popOver);
+
+    function parseUserData(work) { 
+        let targetDiv = document.querySelector('.lb-content'),
+            targetImg = lightbox.querySelector('img');
+
+        let workContent = `
+            
+            <h3>${work.Category}</h3>
+            <p>Description:</p>
+            <h4>${work.Description}</h4>
+            <video>
+            <source src="${work.Video}.mp4">
+           </video>
+            `;
+
+        console.log(workContent);
+
+        targetDiv.innerHTML = workContent;
+        targetImg.src = work.imgsrc;
+
+        lightbox.classList.add('show-lb');
     }
-    
-      // run the fetch API and get the DB data
-      function fetchData() {
-          let targetEl = this,
-          url = `/svgdata/${this.dataset.target}`;
 
-          fetch(url)
-          .then(res => res.json())
-          .then(data => {
-              console.log(data);
+    function getUserData(event) {
+        event.preventDefault(); 
+        
+        let imgSrc = this.getAttribute('src');
+        let url = `/users/${this.getAttribute('href')}`;  
 
-              //populate the popover
-              buildPopover(data, targetEl);
-          })
+        fetch(url) 
+            .then(res => res.json())  
+            .then (data => {
+                console.log("my database result is:", data)
 
-          .catch((err) => console.log(err));
-      }
+                data[0].imgsrc = imgSrc;
 
- const svgGraphic = document.querySelector(".svg-graphic");
-      
-//  svgGraphic.addEventListener("click", () => {
-//      console.log(this);
-//  })
+                parseUserData(data[0]);
+            })
+            .catch((err) => {
+                console.log(err)
+            });
 
+    }
 
- seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
-
-
-
+    userButtons.forEach(button => button.addEventListener('click', getUserData));
+    lightbox.querySelector('.close').addEventListener('click', function () {
+        lightbox.classList.remove('show-lb');
+    })
 })();

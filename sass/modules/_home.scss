@@ -1,0 +1,162 @@
+#mainSlogan {
+    // background-color: #F29F06;
+    border-radius: 30px;
+    margin: 10% 0 20% 0;
+}
+
+#mainSlogan h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #F98410;
+    font-size: 2.2em;
+    margin: 10% 0 3% 12%;
+    
+}
+
+#mainSlogan p {
+    font-family: 'gotham book';
+    color:#4d4d4d;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 2% 0 3% 12%;
+}
+
+
+
+#orange1 {
+    max-width: 50%;
+    float: right;
+    margin: 5% 0 5% 0;
+}
+
+#mainShape {
+    max-width: 20%;
+    margin-left: 40%;
+}
+
+#mainInfo h2 {
+    font-family: 'gotham medium';
+    margin-right: 15%;
+    color: #5d5d5d;
+}
+
+#mainInfo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 7% 0 0 0;
+    color: #7d7d7d;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+
+.work h1 {
+    margin-top: 10%;
+}
+
+#indexContact {
+    margin-top: 10%;
+    text-align: right;
+    color: #7d7d7d;
+    font-family: 'gotham light';
+}
+
+#contactLink {
+    text-decoration: none;
+    color: #F98410;
+
+}
+
+
+
+
+
+@media screen and (min-width: 20em) {
+    #mainSlogan {
+        margin-top: 25%;
+    }
+    
+    #mainSlogan h1 {
+        font-size: 1.6em;
+    }
+
+    #mainSlogan p {
+        font-size: 0.8em;
+    }
+
+    #mainImg {
+        max-width: 80%;
+        margin: 10% 0 10% 80%;
+        
+    }
+
+    #mainShape {
+        margin-bottom: 5%;
+    }
+    
+    #mainInfo h2 {
+        margin: 0 0 0 0;
+    }
+
+    #aboutBth {
+        margin-left: 20%;
+    }
+
+    .things-panel {
+        margin-top: 5%;
+    }
+
+    .workText h2 {
+        font-size: 1em;
+    }
+
+    .workText h4 {
+        font-size: 0.8em;
+    }
+
+    footer p {
+        font-size: 0.3em;
+    }
+}
+
+
+@media screen and (min-width: 40em) {
+    #mainSlogan h1 {
+        font-size: 2em;
+    }
+    #mainSlogan p {
+        font-size: 1.2em;
+    }
+
+    .things-panel {
+        margin-top: 8%;
+    }
+
+    .workText h2 {
+        font-size: 1.2em;
+    }
+
+    .workText h4 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+  
+    #mainSlogan h1 {
+        font-size: 2.2em;
+        
+    }
+
+    #mainSlogan p {
+        font-size: 1.4em;
+    }
+
+    #mainShape {
+        margin-bottom: 5%;
+        margin-left: 10%;
+        max-width: 15%;
+    }
+
+    .things-panel {
+        margin-top: 10%;
+    }
+}

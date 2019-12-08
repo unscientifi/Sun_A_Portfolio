@@ -1,49 +1,3 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <title>Interactive Poster</title>
-</head>
-
-<body>
-    
-    <header>
-        <img src="images/logo.png" id="logo">
-        <h1>Western University</h1>
-    </header>
-
-
-    <main>
-        {{{ body }}}
-    </main>
-
-    <footer>
-        <p>Ryan Sun @2019</p>
-    </footer>
-
-    
-
-    <script type="module" src="js/main.js"></script>
-    <script>
-        var id = "1";
-
-        console.log('name in main file: ' + id);
-    </script>
-
-</body>
-
-</html> --}}
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,14 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/.../bootstrap.min.css"/>
-    <link rel='stylesheet' href='/css/style.css'/>
-    <script type="module" src="js/main.js"></script>
-    <script language="javascript" src="node_modules/bootstrap/.../bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.ico">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script type="module" src="js/main.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
   </head>
+
   <body>
+      <h1 class="d-none">Portfolio Home</h1>
+    
+    <header>
+        
+             <nav id="navBar" class="navbar navbar-expand-lg">
+            <div class="row">
+                <div class="col-3 no-padding" id="mainLogoDiv">
+                    <a href="/">
+                     <img src="images/logo1.png" alt="logo" id="mainLogo">
+                    </a> 
+                </div>
+
+                <div class="col" id="mainNav">
+                    <h2 class="d-none">Main Navigation</h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="images/menu.png" id="menuIcon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+
+
+        
+
+                </div>
+            </div>
+       
+            
+    </header>
+
+    <main>
     {{{body}}}
-      <h2>My name is Ryan</h2>
-  
+    </main>  
+    
+    <footer>
+        <div class="container">
+        <div class="row" id="footer">
+          <div class="c0l-3 align-self-center no-padding" id="footerIcon">
+
+                <a href="https://www.behance.net/ryansun1"><img src="images/behance.png" alt="Behance"></a>
+                <a href="https://www.instagram.com/ryannoc1ue/"><img src="images/instagram1.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/ryan-sun-26823115a/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <p>2019 © Ryan Sun. All Rights Reserved</p>
+            </div>
+            </div>
+         </div>
+    </footer>
+
   </body>
+
+
+
 </html>

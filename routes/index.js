@@ -7,39 +7,53 @@ router.get('/', (req, res) => {
    
     console.log('at the main route');
 
-    let query = `SELECT ID FROM tbl_data`;
+    let query = `SELECT ID, Name, Image, Category FROM tbl_work WHERE ID <= 4`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
 
         console.log(result); 
-         res.render('home', { thing: result });
+         res.render('index', { thing: result });
     })
 })
 
-router.get('/svgdata/:target', (req, res) => {
+router.get('/portfolio', (req, res) => {
+   
+    console.log('at the work route');
+
+    let query = `SELECT * FROM tbl_work`;
+
+    sql.query(query, (err, result) => {
+        if (err) { throw err; console.log(err); }
+
+        console.log(result); 
+         res.render('portfolio', { thing: result });
+    })
+})
+
+router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
-    let query = `SELECT * FROM tbl_data WHERE ID ="${req.params.target}"`;
-// dynamic selection based on the id
+    let query = `SELECT * FROM tbl_work WHERE ID ="${req.params.id}"`;
+
     sql.query(query, (err, result) => {
-        if (err) console.log(err);
-        console.log(result); 
-        res.json(result[0]);
+    if (err) { throw err; console.log(err); }
     
-        
-       
-        // result[0].Program = result[0].Program.split(",").map(function(item) {
-        //     item = item.trim(); 
+    console.log(result); 
+    
+    
+    //which isn't anything we can work with
+    result[0].Description = result[0].Description.split(",").map(function(item) {
+        item = item.trim(); // remove the extra spaces from each word
 
-        //     return item;
-        // })
-
-        // console.log('after split: ', result[0]);
-
-        // res.json(result); 
+        return item;
     })
+
+    // console.log('after split: ', result[0]);
+
+    res.json(result); // sends the DB query back to the broswer
+})
 })
 
 module.exports = router;

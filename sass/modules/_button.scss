@@ -1,9 +1,57 @@
-.u-link {
-color: #494949 !important;
-text-transform: uppercase;
-text-decoration: none;
-background: #ffffff;
-padding: 20px;
-border: 3px solid #494949 !important;
-display: inline-block;
+// .u-link {
+// color: #494949 !important;
+// text-transform: uppercase;
+// text-decoration: none;
+// background: #ffffff;
+// // padding: 20px;
+// border: 3px solid #494949 !important;
+// display: inline-block;
+// }
+
+#mainBth {
+    padding: 1% 3% 1% 3%;
+    margin: 3% 0 0 12%;
+    background-color: #F29F06;
+    color: white;
+    
+}
+
+#mainBth:hover {    
+    border-radius: 10px;
+    transition: ease 0.3s;
+    color: white;
+    background-color: #F24405;
+    opacity: 0.7;
+}
+
+#aboutBth {
+    padding: 2% 7% 2% 7%;
+    margin: 10% 0 10% 0;
+    background-color: #F29F06;
+    color: white;
+    font-family: 'gotham book';
+}
+
+#aboutBth:hover {
+    background-color: #F98410;
+    transition: all 0.2s;
+    font-family: 'gotham book';
+}
+
+#viewBth {
+    background-color: #F98410;
+    color: white;
+    font-family: 'gotham book';
+    padding: 2% 7% 2% 7%;
+    margin: 10% 0 10% 0;
+    border-radius: 8px;
+}
+
+#viewBth:hover {
+    background-color: #F24405;
+}
+
+#buttonSvg {
+    max-width: 50%;
+    margin-bottom: 5%;
 }
