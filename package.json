@@ -4,7 +4,7 @@
   "description": "2019 portfolio site working ",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
