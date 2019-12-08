@@ -24,7 +24,6 @@
     "mysql": "^2.17.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "nodemon": "^1.19.4"
+    "gulp": "^4.0.2"
   }
 }
