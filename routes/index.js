@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
    
     console.log('at the main route');
 
-    let query = `SELECT ID, Name, Image, Category FROM tbl_work WHERE ID <= 4`;
+    let query = `SELECT ID, Name, Image, Category FROM work WHERE ID <= 4`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -21,7 +21,7 @@ router.get('/portfolio', (req, res) => {
    
     console.log('at the work route');
 
-    let query = `SELECT * FROM tbl_work`;
+    let query = `SELECT * FROM work`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -35,7 +35,7 @@ router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
-    let query = `SELECT * FROM tbl_work WHERE ID ="${req.params.id}"`;
+    let query = `SELECT * FROM work WHERE ID ="${req.params.id}"`;
 
     sql.query(query, (err, result) => {
     if (err) { throw err; console.log(err); }
