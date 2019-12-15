@@ -16,7 +16,7 @@
         <h2 id="contactText">LET’S GET IN TOUCH</h2>
         <p id="contactP">Have any new projects or ideas? Feel free to fill out the form and contact me. <br>I’ll get back to you within 24 hours.
     <br>
-Or if you prefer direct email: <a id="mailing" href="mailto:ryansunportfolio@gmail.com ">ryansunportfolio@gmail.com </a>
+Or if you prefer direct email: <a id="mailing" href="mailto:info@theryansun.com ">info@theryansun.com </a>
 </p>
         </div>
         
@@ -24,8 +24,8 @@ Or if you prefer direct email: <a id="mailing" href="mailto:ryansunportfolio@gma
 
         <div class="row">
         <div class="col-12 align-center no-padding" >
-{{ msg }}
- <form action="send" method="POST" id="contactForm">
+
+ <form action="/contact.php" method="post" id="contactForm">
         <h1 class="d-none">Contact</h1>
         
         <label for="name-field">Name<span style="color: red;">*</span></label>
@@ -43,7 +43,9 @@ Or if you prefer direct email: <a id="mailing" href="mailto:ryansunportfolio@gma
     </div>
     <div class="col-2"></div>
     <div class="col-8">
+        <a href="contact.php">
         <button type="submit" id="contactBth">Submit</button>
+        </a>
         </div>
     </form>
     

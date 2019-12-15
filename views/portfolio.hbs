@@ -15,10 +15,10 @@
         
         <div class="row">
         
-        {{#each works}}
+        {{#each thing}}
         <div class="user-panel col-lg-4 col-sm-6 align-center no-padding">
             <a class="u-link" href="{{ ID }}">
-               <img class="u-avatar" src="images/{{ Image }}" alt="avatar">
+               <img class="u-avatar" src="images/{{ Image }}.jpg" alt="avatar">
             </a>   
              <div class="workText1">
                 <h2>{{ Name }}</h2>
@@ -36,13 +36,16 @@
 </section>
 <section class="lightbox">
         <i id="closeIcon" class="fa fa-close close"></i>
-       
+        {{!-- <span class="close"></span> --}}
         <div class="sidebar">
-            <img src="" alt="portfolio image" class="projectImg">
+            <img src="" alt="portfolio image">
         </div>
 
         <div class="lb-content">
-           
+            
         </div>
     </section>
+
+
+    
 
