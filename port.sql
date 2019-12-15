@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 15, 2019 at 03:56 AM
+-- Generation Time: Dec 15, 2019 at 11:01 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `portfolio`
+-- Database: `port`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_work`
+-- Table structure for table `work`
 --
 
-CREATE TABLE `tbl_work` (
+CREATE TABLE `work` (
   `ID` int(11) NOT NULL,
   `Name` varchar(70) NOT NULL,
   `Category` varchar(20) NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `tbl_work` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_work`
+-- Dumping data for table `work`
 --
 
-INSERT INTO `tbl_work` (`ID`, `Name`, `Category`, `Image`, `Description`, `Information`, `Collaborate`, `Video`) VALUES
+INSERT INTO `work` (`ID`, `Name`, `Category`, `Image`, `Description`, `Information`, `Collaborate`, `Video`) VALUES
 (1, 'ThermoSecurity', 'Graphic Design', 'ThermoSecurity.jpg', 'HouseCom™️ ThermoSecurity™️ System GUI Concept', 'This is a school group project focusing on industrial design and promotion. I designed the specific functionality of the HouseCom™️ ThermoSecurity™️ System and its graphical user interface.\r\n\r\n', 'Collaborated with Collins Ilo, Melbin P. Jossy, and Arun Rohit Victor in modeling and web development. ', 'ThermoSecurity.mp4'),
 (2, 'Monga', 'Graphic Design', 'Monga.jpg', 'Monga Takeout Menu Redesign', 'Monga is one of the famous Taiwanese fried chicken brands in Toronto. I took the chance to redesign their takeout menu. I recreated the layout and added several new products. By embedding geometric shapes, I maintain the overall brand impression in my design.', '', 'Monga.mp4'),
 (3, 'DemoReel', '3D & VFX', 'DemoReel.jpg', '2019 3D Demo Reel', 'My 2019 Cinema 4D Demo Reel is based on the use of lights. It is important to always engage with different lighting settings to get a more realistic feeling.\r\nI also added plenty of flares in After Effects to enhance the lighting effects.', '', 'DemoReel.mp4'),
@@ -54,9 +54,9 @@ INSERT INTO `tbl_work` (`ID`, `Name`, `Category`, `Image`, `Description`, `Infor
 --
 
 --
--- Indexes for table `tbl_work`
+-- Indexes for table `work`
 --
-ALTER TABLE `tbl_work`
+ALTER TABLE `work`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -64,9 +64,9 @@ ALTER TABLE `tbl_work`
 --
 
 --
--- AUTO_INCREMENT for table `tbl_work`
+-- AUTO_INCREMENT for table `work`
 --
-ALTER TABLE `tbl_work`
+ALTER TABLE `work`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
