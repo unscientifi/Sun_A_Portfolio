@@ -8,7 +8,7 @@ const myVM = (() => {
    
     function parseUserData(work) { 
         let targetDiv = document.querySelector('.lb-content'),
-            targetImg = lightbox.querySelectorAll('.projectImg');
+            targetImg = lightbox.querySelector('img');
 
         let workContent = `
         <h3>${work.Category}</h3>
@@ -32,7 +32,7 @@ const myVM = (() => {
         event.preventDefault(); //kill the default a tag behaviour (don't navigate anythere)
 
         //find this image closets to the anchor tag and get its src property
-        let imgSrc = this.previousElementSibling.getAttribute('src');
+        let imgSrc = this.getAttribute('src');
         // document.getElementsByClassName('projectImg')[0].getAttribute('src');
         // document.getElementsByClassName('projectImg')[0].getAttribute('src');
         let url = `/users/${this.getAttribute('href')}`;  // /1
