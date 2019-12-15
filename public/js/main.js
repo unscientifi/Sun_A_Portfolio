@@ -32,7 +32,8 @@ const myVM = (() => {
         event.preventDefault(); //kill the default a tag behaviour (don't navigate anythere)
 
         //find this image closets to the anchor tag and get its src property
-        let imgSrc = document.getElementsByClassName('projectImg')[0].getAttribute('src');
+        let imgSrc = this.previousElementSibling.getAttribute('src');
+        // document.getElementsByClassName('projectImg')[0].getAttribute('src');
         // document.getElementsByClassName('projectImg')[0].getAttribute('src');
         let url = `/users/${this.getAttribute('href')}`;  // /1
 

@@ -14,17 +14,17 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', require('./routes/index'));
 
-// app.get('/', function (req, res) {
-//     res.render('index');
-// });
+app.get('/', function (req, res) {
+    res.render('index');
+});
 
-// app.get('/about', function (req, res) {
-//     res.render('about');
-// });
+app.get('/about', function (req, res) {
+    res.render('about');
+});
 
-// app.get('/portfolio', function (req, res) {
-//     res.render('portfolio');
-// });
+app.get('/portfolio', function (req, res) {
+    res.render('portfolio');
+});
 
 app.get('/send', function (req, res) {
     res.render('contact');
