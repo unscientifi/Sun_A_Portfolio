@@ -30,7 +30,7 @@ const myVM = (() => {
     function getUserData(event) {
         event.preventDefault(); 
         
-        let imgSrc = this.previousElementSibling.getAttribute('src');
+        let imgSrc = this.getAttribute('src');
         let url = `/users/${this.getAttribute('href')}`;  
 
         fetch(url) 
