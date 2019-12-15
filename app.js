@@ -26,7 +26,7 @@ app.get('/portfolio', function (req, res) {
     res.render('portfolio');
 });
 
-app.get('/send', function (req, res) {
+app.get('/contact', function (req, res) {
     res.render('contact');
 });
 
