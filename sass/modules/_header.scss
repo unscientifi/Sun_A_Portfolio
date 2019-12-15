@@ -8,7 +8,6 @@ nav {
 
         li { 
             display: inline;
-            margin-top: 1%;
          }
     }
 
@@ -44,7 +43,7 @@ nav {
 }
 
 .nav-link {
-    font-family: 'gotham book';
+    font-family: 'Roboto';
     font-size: 1.2em;
     color: #343434;
 }
@@ -63,17 +62,27 @@ nav {
   
     #mainLogo {
         max-width: 60%;
+        
     }
     
     #mainNav {
         margin: 0 auto;
+        
+    }
+
+    #mainLogoDiv {
+        margin-left: 10%;
     }
 
    #menuIcon {
        max-width: 100%;
-       margin-top: 60%;
+       margin-top: 50%;
        margin-left: 80%;
    }
+   h1 {
+       margin-bottom: 20%;
+   }
+
 }
 
 

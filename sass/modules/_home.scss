@@ -70,6 +70,11 @@
 
 
 @media screen and (min-width: 20em) {
+
+    #orange1 {
+        margin: 15% 0 15% 0;
+    }
+
     #mainSlogan {
         margin-top: 25%;
     }
@@ -83,13 +88,13 @@
     }
 
     #mainImg {
-        max-width: 80%;
+        max-width: 100%;
         margin: 10% 0 10% 80%;
         
     }
 
     #mainShape {
-        margin-bottom: 5%;
+        margin: 10% 0 10% 0;
     }
     
     #mainInfo h2 {
@@ -100,8 +105,12 @@
         margin-left: 20%;
     }
 
-    .things-panel {
+    .user-panel {
         margin-top: 5%;
+    }
+
+    #work {
+        margin-top: 15%;
     }
 
     .workText h2 {

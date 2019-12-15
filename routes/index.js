@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         if (err) { throw err; console.log(err); }
 
         console.log(result); 
-         res.render('index', { thing: result });
+         res.render('index', { works: result });
     })
 })
 
@@ -27,7 +27,7 @@ router.get('/portfolio', (req, res) => {
         if (err) { throw err; console.log(err); }
 
         console.log(result); 
-         res.render('portfolio', { thing: result });
+         res.render('portfolio', { works: result });
     })
 })
 

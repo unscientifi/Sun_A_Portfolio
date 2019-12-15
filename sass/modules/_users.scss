@@ -41,13 +41,18 @@
             margin: 0 auto;
         }
 
-        h1, h3 { margin: 5px 0; }
+        p {margin: 10% 0 5% 0;}
+        h2, h4 { margin: 5% 0; }
     }
 }
 
 @media screen and (min-width: 20em) {
     .user-panel {
         margin: 5% 5%;
+    }
+
+    .workText1{
+        margin-bottom: 10%;
     }
 }
 
