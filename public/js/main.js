@@ -10,12 +10,13 @@ const myVM = (() => {
 
         let workContent = `
             
-            <h3>${work.Category}</h3>
-            <p>Description:</p>
-            <h4>${work.Description}</h4>
-            <video>
-            <source src="${work.Video}.mp4">
-           </video>
+        <h3>${work.Category}</h3>
+        <p></p>
+        <h4>${work.Description}</h4>
+        <p></p>
+        <p>${work.Information}</p>
+        <p>${work.Collaborate}</p>
+        <video controls src="images/${work.Video}" width="80%"></video>
             `;
 
         console.log(workContent);
