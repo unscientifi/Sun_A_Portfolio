@@ -13,11 +13,13 @@
 @font-face {
     font-family: 'gotham medium';
     src:  url('/font/Gotham-Medium.woff2') format('woff2'),
-          url('/font/Gotham-Medium.woff') format('woff');
+          url('/font/Gotham-Medium.woff') format('woff'),
+          url('/font/Gotham-Medium.otf') format('opentype');
 
   font-family: 'gotham book';
   src:  url('/font/Gotham-Book.woff2') format('woff2'),
-        url('/font/Gotham-Book.woff') format('woff');
+        url('/font/Gotham-Book.woff') format('woff'),
+        url('/font/Gotham-Book.otf') format('opentype');
   }
 
 
