@@ -58,10 +58,9 @@ app.post('/send', function (req, res) {
   //   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
       transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log(error);
-      } else {
-        console.log('Email has been sent: %s ' + info.messageId);
+        return console.log(error);
       }
+        console.log('Email has been sent: %s ' + info.messageId);
     });  
     
   
