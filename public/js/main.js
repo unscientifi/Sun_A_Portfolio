@@ -8,7 +8,7 @@ const myVM = (() => {
    
     function parseUserData(work) { 
         let targetDiv = document.querySelector('.lb-content'),
-            targetImg = lightbox.querySelector('.img');
+            targetImg = lightbox.querySelector('.projectImg');
 
         let workContent = `
         <h3>${work.Category}</h3>
